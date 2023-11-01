@@ -13,7 +13,7 @@ const Box = (props) => {
                     ? Style.bottomBox
                     : Style.bodybox ]}>
                     <View style={[props.bottom? Style.equal : null ]}>
-                        <Text style ={[props.bottom? Style.equalText : {fontSize: 32} ]} >
+                        <Text style ={[props.bottom? Style.equalText : {fontSize: 32} ]} onPress={props.handlePress} handlePress={props.handleAddToDisplay}>
                             {props.text}
                         </Text>
                     </View>
