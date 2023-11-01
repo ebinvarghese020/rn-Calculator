@@ -1,10 +1,11 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-native/no-inline-styles */
 
 import React, {useRef, useState} from 'react';
-import {View, Text, Touchable, TouchableOpacity } from 'react-native';
+import {View, Text, TouchableOpacity } from 'react-native';
 import Style from './styles';
 import Box from './body';
-import ActionSheet from "react-native-actions-sheet";
+import ActionSheet from 'react-native-actions-sheet';
 import { evaluate } from 'mathjs';
 
 
@@ -20,10 +21,10 @@ const App = () => {
     }
     };
     const handleAddToDisplay = (text) => {
-        if ( text == 'C'){
-            setdisplay(''); 
+        if ( text === 'C'){
+            setdisplay('');
         } else {
-            setdisplay(display + text); 
+            setdisplay(display + text);
         }
     };
     return (
